@@ -17,12 +17,12 @@ class Body extends StatelessWidget {
         children: <Widget>[//we can write children property like this: *children: [*
           HeaderWithSearchBox(size: size),
           TitleWithButtonMore(title: "Recommended For You",
-          press: () {////if pressed to button more. Can navigate to other page for more items
+          press: () {//ToDo: if pressed to button more. Can navigate to other page for more items
           }),
           RecommendTrends(),
           TitleWithButtonMore(
             title: "Featured Fashion",
-            press: () {//if pressed to button more. Can navigate to other page for more items
+            press: () {//ToDo: if pressed to button more. Can navigate to other page for more items
             },
           ),
           FeaturedTrends(),
