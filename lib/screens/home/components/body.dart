@@ -17,12 +17,13 @@ class Body extends StatelessWidget {
         children: <Widget>[
           HeaderWithSearchBox(size: size),
           TitleWithButtonMore(title: "Recommended For You",
-          press: () {//if pressed to more button, can navigate to different page
+          press: () {////if pressed to button more. Can navigate to other page for more items
           }),
           RecommendTrends(),
           TitleWithButtonMore(
             title: "Featured Fashion",
-            press: () {},
+            press: () {//if pressed to button more. Can navigate to other page for more items
+            },
           ),
           FeaturedTrends(),
           SizedBox(height: kDefaultPadding),//space bottom of Featured
