@@ -10,11 +10,11 @@ class Body extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    //It will provide us total height of our screen
+    //size will provide us total height of our screen
     Size size = MediaQuery.of(context).size;//Size of our screen
     return SingleChildScrollView(//it enabling scrolling the screen.
       child: Column(
-        children: <Widget>[
+        children: <Widget>[//we can write children property like this: *children: [*
           HeaderWithSearchBox(size: size),
           TitleWithButtonMore(title: "Recommended For You",
           press: () {////if pressed to button more. Can navigate to other page for more items
