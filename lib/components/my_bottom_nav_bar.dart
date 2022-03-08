@@ -11,9 +11,13 @@ class MyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(left: kDefaultPadding * 2, right: kDefaultPadding * 2),
-      height: 50,
-      decoration: BoxDecoration(color: Colors.white, boxShadow: [
+      padding: EdgeInsets.only(
+        left: kDefaultPadding * 2,
+        right: kDefaultPadding * 2),
+      height: 50, //height of bottom nav bar container
+      decoration: BoxDecoration(
+        color: Colors.white, 
+        boxShadow: [
         BoxShadow(
             offset: Offset(0, -10),
             blurRadius: 35,
@@ -50,7 +54,8 @@ class buildAppBar extends StatelessWidget {
       backgroundColor: kPrimaryColor,
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/more.svg",color: Color.fromARGB(255, 3, 247, 154),height: 30,),
-        onPressed: () {},
+        onPressed: () {//if pressed to app bar icon
+        },
       ),
     );
   }
