@@ -12,8 +12,7 @@ class Body extends StatelessWidget {
   Widget build(BuildContext context) {
     //It will provide us total height of our screen
     Size size = MediaQuery.of(context).size;//Size of our screen
-    return SingleChildScrollView(
-      //it enabling scrolling the screen
+    return SingleChildScrollView(//it enabling scrolling the screen.
       child: Column(
         children: <Widget>[
           HeaderWithSearchBox(size: size),
@@ -25,7 +24,7 @@ class Body extends StatelessWidget {
             title: "Featured Fashion",
             press: () {},
           ),
-          FeaturedPlants(),
+          FeaturedTrends(),
           SizedBox(height: kDefaultPadding),//space bottom of Featured
         ],
       ),
