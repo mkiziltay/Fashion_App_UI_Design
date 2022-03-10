@@ -76,8 +76,10 @@ class RecommendPlantCard extends StatelessWidget {
       child: Column(children: <Widget>[
         Image.asset(image.toString()),
         GestureDetector(
-          onTap: () {Navigator.push(context,
-                  MaterialPageRoute(builder: (context) => DetailsScreen()));},
+          onTap: () {
+            Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  },
           child: Container(
             padding: EdgeInsets.all(kDefaultPadding / 2),
             decoration: BoxDecoration(
