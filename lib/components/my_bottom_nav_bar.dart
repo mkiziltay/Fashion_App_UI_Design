@@ -29,10 +29,10 @@ class MyBottomNavBar extends StatelessWidget {
               },
               icon: SvgPicture.asset("assets/icons/home.svg")),
           IconButton(
-              onPressed: () {},
+              onPressed: () {/*nav Listener*/},
               icon: SvgPicture.asset("assets/icons/heart-icon.svg")),
           IconButton(
-              onPressed: () {},
+              onPressed: () {/*nav Listener*/},
               icon: SvgPicture.asset("assets/icons/user-icon.svg"))
         ],
       ),
