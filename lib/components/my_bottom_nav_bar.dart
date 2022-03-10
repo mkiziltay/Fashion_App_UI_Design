@@ -10,10 +10,10 @@ class MyBottomNavBar extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: EdgeInsets.only(
-          left: kDefaultPadding * 2, right: kDefaultPadding * 2),
+      padding: EdgeInsets.only( left: kDefaultPadding * 2, right: kDefaultPadding * 2),
       height: 50, //height of bottom nav bar container
-      decoration: BoxDecoration(color: Colors.white, boxShadow: [
+      decoration: BoxDecoration(color: Colors.white,
+      boxShadow: [
         BoxShadow(
             offset: Offset(0, -10),
             blurRadius: 35,
@@ -49,7 +49,7 @@ class buildAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: 0,
-      title: Text("2022 FASHION STYLE",
+      title: Text("2022 FASHION STYLE UI",
           style: TextStyle(fontWeight: FontWeight.bold)),
       backgroundColor: kPrimaryColor,
       //TODO: {signout Button} actions: [],
