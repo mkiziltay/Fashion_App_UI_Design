@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import '../constants.dart';
 
-
 class MyBottomNavBar extends StatelessWidget {
   const MyBottomNavBar({
     Key? key,
@@ -12,12 +11,9 @@ class MyBottomNavBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       padding: EdgeInsets.only(
-        left: kDefaultPadding * 2,
-        right: kDefaultPadding * 2),
+          left: kDefaultPadding * 2, right: kDefaultPadding * 2),
       height: 50, //height of bottom nav bar container
-      decoration: BoxDecoration(
-        color: Colors.white, 
-        boxShadow: [
+      decoration: BoxDecoration(color: Colors.white, boxShadow: [
         BoxShadow(
             offset: Offset(0, -10),
             blurRadius: 35,
@@ -28,7 +24,8 @@ class MyBottomNavBar extends StatelessWidget {
         children: <Widget>[
           IconButton(
               onPressed: () {
-                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("widget not created and customized.")));
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(
+                    content: Text("widget not created and customized.")));
               },
               icon: SvgPicture.asset("assets/icons/home.svg")),
           IconButton(
@@ -52,14 +49,15 @@ class buildAppBar extends StatelessWidget {
   Widget build(BuildContext context) {
     return AppBar(
       elevation: 0,
-      title: Text("2022 FASHION STYLE",style: TextStyle(fontWeight: FontWeight.bold)),
+      title: Text("2022 FASHION STYLE",
+          style: TextStyle(fontWeight: FontWeight.bold)),
       backgroundColor: kPrimaryColor,
-      //TODO: actions: [],
+      //TODO: {signout Button} actions: [],
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/more.svg",
-        color: Color.fromARGB(255, 3, 247, 154),
-        height: 30),
-        onPressed: () {//if pressed to app bar icon
+            color: Color.fromARGB(255, 3, 247, 154), height: 30),
+        onPressed: () {
+          //if pressed to app bar icon
         },
       ),
     );
