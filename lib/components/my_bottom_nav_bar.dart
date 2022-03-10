@@ -27,7 +27,9 @@ class MyBottomNavBar extends StatelessWidget {
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: <Widget>[
           IconButton(
-              onPressed: () {},
+              onPressed: () {
+                ScaffoldMessenger.of(context).showSnackBar(SnackBar(content: Text("widget not created and customized.")));
+              },
               icon: SvgPicture.asset("assets/icons/home.svg")),
           IconButton(
               onPressed: () {},
