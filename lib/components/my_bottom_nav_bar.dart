@@ -54,6 +54,7 @@ class buildAppBar extends StatelessWidget {
       elevation: 0,
       title: Text("2022 FASHION STYLE",style: TextStyle(fontWeight: FontWeight.bold)),
       backgroundColor: kPrimaryColor,
+      //TODO: actions: [],
       leading: IconButton(
         icon: SvgPicture.asset("assets/icons/more.svg",
         color: Color.fromARGB(255, 3, 247, 154),
