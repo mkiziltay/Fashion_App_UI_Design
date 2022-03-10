@@ -53,7 +53,9 @@ class buildAppBar extends StatelessWidget {
       title: Text("2022 FASHION STYLE",style: TextStyle(fontWeight: FontWeight.bold)),
       backgroundColor: kPrimaryColor,
       leading: IconButton(
-        icon: SvgPicture.asset("assets/icons/more.svg",color: Color.fromARGB(255, 3, 247, 154),height: 30,),
+        icon: SvgPicture.asset("assets/icons/more.svg",
+        color: Color.fromARGB(255, 3, 247, 154),
+        height: 30),
         onPressed: () {//if pressed to app bar icon
         },
       ),
