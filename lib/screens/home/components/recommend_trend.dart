@@ -39,7 +39,10 @@ class RecommendTrends extends StatelessWidget {
             image: "assets/images/white.jpg",
             price: 40,
             title: "White T-Shirt",
-            press: () {},
+            press: () {
+              Navigator.push(context,
+                  MaterialPageRoute(builder: (context) => DetailsScreen()));
+                  },
           ),
         ],
       ),
