@@ -21,13 +21,13 @@ class TitleWithButtonMore extends StatelessWidget {
         children: [
           TitleWithCustomUnderLine(text: title.toString()),
           Spacer(),
-          ElevatedButton(// FIXME: Button color
+          ElevatedButton(// FIXME: Button Pcolor
                 onPressed: () {},
                 style: ButtonStyle(
                     shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                         RoundedRectangleBorder(
                   borderRadius: BorderRadius.circular(20)))),
-                child: Text("More",
+                child: const Text("More",
                     style: TextStyle(color: Colors.white)),
               )
         ],
@@ -53,7 +53,7 @@ class TitleWithCustomUnderLine extends StatelessWidget {
           padding: const EdgeInsets.only(left: kDefaultPadding / 4),
           child: Text(
             text.toString(), //nulSafety error => if not parse to String.
-            style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+            style: const TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
           ),
         ),
         Positioned(
